@@ -35,10 +35,15 @@ h1, .h1 {
 
 h2, .h2 {
   font-family: Litte Salty;
+  font-size: 3rem;
+} 
+
+h3, .h3 {
+  font-family: Litte Salty;
   font-size: 2.2rem;
 } 
 
-h3, h4, h5, .h3, .h4, .h5 {
+h4, h5, .h4, .h5 {
   font-family: Litte Salty;
 }
 
@@ -229,6 +234,10 @@ hr:after {
 
 .w-40 {
   width: 40%;
+}
+
+.w-85 {
+  width: 85%;
 }
 
 .tierlist {

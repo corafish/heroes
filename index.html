@@ -13,545 +13,418 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link href="style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="scripts/includes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
         <div class="container min-vh-100">
-            <nav class="navbar navbar-expand-lg mt-3 mb-3">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-center" id="main-menu">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link h3 me-4 pb-0" href="#world">The World</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link h3 me-4 pb-0" href="#mains">My Mains</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link h3 me-4 pb-0" href="#favorites">My Favorites</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link h3 me-4 pb-0" href="#tierlists">Tier List Maker</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link h3 me-4 pb-0" href="#for-you">For You</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link h3 me-4 pb-0" href="#sitely">Sitely</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link corafish h3 me-4 pb-0" href="https://cora.fish/">cora.fish</a>
-                        </li>
-                    </ul>
-                    </div>
-                </div>
-            </nav>
+            <div w3-include-html="nav.html"></div>
             <!--START HEADER-->
-<div class="row mt-4" id="home">
-    <div class="col-lg-3 mb-4">
-        <img src="images/Spray_Juno_Star_Glider.png" class="sticker img-fluid" loading="lazy">
-    </div>
-    <div class="col-lg-9 p-4">
-        <h1>Brighter than a Shooting Star <i class="bi bi-stars"></i></h1>
-        <p class="display-5"><mark class="mark-green">Cora's Overwatch Shrine</mark></p>
-        <p><a href="https://overwatch.blizzard.com/en-us/">Overwatch</a>, or OW for short, is a free-to-play PvP hero shooter game by Blizzard Entertainment.</p>  
-        <p>In the past year or so, I've gotten more invested in the game lore and dedicated to improving my strategy and skills. And since I could yap about this game forever, <mark class="mark-yellow">I've made this place to share my love for it all!</mark> <i class="bi bi-emoji-smile"></i></p>  
-    </div>
-    <hr class="opacity-75 mb-0">
-</div>
-<!--END HEADER-->
-<!--START WORLDBUILDING-->
-<div class="row" id="world">
-    <div class="col mt-0 mb-0 ps-4 pe-4">
-        <h1>The World of Overwatch <i class="bi bi-globe-americas"></i></h1>
-        <p class="display-5"><mark class="mark-pink">(My very, very brief summary of the story)</mark></p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6 mt-0 mb-4 ps-4 pe-4">
-        <p>OW is set in our world, 60 years into the future, in a post&ndash;world war setting. <mark class="mark-orange">Overwatch was an international task force that formed as a response to the Omnic Crisis,</mark> a worldwide disaster where a rogue enivornmental conservation AI took control of the world's robots and attempted to eliminate all of humanity in the interest of saving the planet. Overwatch comprised scientists, diplomats, soldiers, search-and-rescue forces and more, but most people know it for its elite strike team of heroes.</p>
-        <p>The Omnic Crisis was eventually quelled by a sentient robot, Aurora, who "awoke" her kind on an instant, global scale and created the Omnic race. Though the war is over, the world is still recovering and new, malevolent forces have risen up to take advantage of its weakened state. <mark class="mark-green">A new generation of heroes is needed to protect the world against its latest threats.</mark> <i class="bi bi-star"></i></p>
-    </div>
-    <div class="col-lg-6 mt-0 mb-4 ps-4 pe-4">
-        <p>Overwatch lore is scattered across many animated shorts, comics, books, short stories, and other media. It's a lot to dig through, so I'd say that the best starting point is <mark class="mark-blue">the three-part Genesis series.</mark></p>
-        <div class="ratio ratio-16x9">
-        <iframe src="https://www.youtube.com/embed/a1rtqzDttrQ?si=wLhhvjJYKk1_24FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-    <p class="display-5 text-center"><u>If you want to explore more of the game lore, I suggest checking out the official <a href="https://overwatch.blizzard.com/en-us/media/">OW Media Gallery</a> and the <a href="https://overwatch.fandom.com/wiki/Overwatch_Wiki">Overwatch Wiki!</a></u></p>
-    <hr class="opacity-75">
-</div>
-<!--END WORLDBUILDING-->
-<!--START MAINS-->
-<div class="row" id="mains">
-    <div class="col mt-0 p-4">
-        <h1>My Mains <i class="bi bi-arrow-through-heart"></i></h1>
-        <p><mark class="mark-blue">I play mainly Support</mark> because I love the utility of Support heroes on top of their damage abilities. It's a great feeling to be able to enable teammates to make big plays and stay alive.  However, I also enjoy playing Damage and Tank too! <i class="bi bi-fire"></i></p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6 mb-4">
-        <div class="pt-4 ps-4 pe-2 bg-green papershadow h-100">
-            <img src="images/Spray_Baptiste_Hey_There.png" class="sticker w-40 float-end" loading="lazy">
-            <h2>Baptiste</h2>
-            <p class="mb-1"><b>Role:</b> Support <i class="bi bi-bandaid"></i></p>
-            <p class="mb-1"><b>Country:</b> Haiti</p>
-            <p class="mb-1"><b>About:</b> Jean-Augustine Baptiste is a former Talon medic who defected to become an Overwatch agent and make amends for his past. He's friendly, upbeat, and often makes corny, flirty jokes, particularly about how good-looking he is.</p>
-            <p><b>Kit:</b> Baptiste is a mobile character with a lot of tools to keep his allies standing: a gun that fires healing projectiles, an AOE heal, a healing shoulder turret, and an Immortality Field. He's one of the three supports that does hitscan damage.</p>
-        </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-        <div class="pt-4 ps-4 pe-2 bg-purple papershadow h-100">
-            <img src="images/Spray_Juno_Discovery.png" class="sticker w-40 float-end" loading="lazy">
-            <h2>Juno</h2>
-            <p class="mb-1"><b>Role:</b> Support <i class="bi bi-bandaid"></i></p>
-            <p class="mb-1"><b><del style="text-decoration-style: double; text-decoration-color: hotpink;">Country</del> Planet:</b> Mars</p>
-            <p class="mb-1"><b>About:</b> Juno Teo Minh is the first human to have been born on Mars. However, trouble on her planet forced her to travel to Earth to find help for family and friends back home. She is cautious and naive, but extremely curious and loyal to the ones she loves.</p>
-            <p><b>Kit:</b> Juno's hover boots give her great mobility, and her Hyper Ring speeds up the movement of her allies. She can do decent damage as her pulsar torpedos lock on and home in on enemies.</p>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-6 mb-4">
-        <div class="pt-4 ps-4 pe-2 bg-pink papershadow h-100">
-            <img src="images/Spray_Cassidy_Bang_Bang.png" class="sticker w-40 float-end" loading="lazy">
-            <h2>Cassidy</h2>
-            <p class="mb-1"><b>Role:</b> Damage <i class="bi bi-crosshair"></i></p>
-            <p class="mb-1"><b>Country:</b> USA</p>
-            <p class="mb-1"><b>About:</b> Cole Cassidy was a robber and outlaw when part of the Deadlock Rebels, but he changed his ways when offered the opportunity to put his gunslinging skills to better use with Blackwatch and, later, Overwatch. He has a laid-back personality and seems to always have one foot out the door when it comes to being an Overwatch agent. Despite what he says, he sticks around.</p>
-            <p><b>Kit:</b> Cassidy's kit is simple: a revolver and a flashbang grenade, both of which are most useful at short-range. Accuracy is rewarded with high damage output.</p>
-        </div>
-    </div>
-    <div class="col-lg-6 mb-4">
-        <div class="pt-4 ps-4 pe-2 bg-blue papershadow h-100">
-            <img src="images/Spray_Junker_Queen_Jagged_Blade.png" class="sticker w-50 float-end" loading="lazy">
-            <h2>Junker Queen</h2>
-            <p class="mb-1"><b>Role:</b> Tank <i class="bi bi-shield-shaded"></i></p>
-            <p class="mb-1"><b>Country:</b> Australia</p>
-            <p class="mb-1"><b>About:</b> The Junker Queen, Odessa Stone, is the current ruler of the Junkers, a rough, cutthroat society of the Outback wastelands. She earned her title after winning the Reckoning, a gladiator-style arena fight. Since then, she's ruled with an iron fist.</p>
-            <p><b>Kit:</b> Her knife is called "Gracie," and her axe is "Carnage." Both are brutal weapons that cause damage over time while also giving her life steal. Gracie can also pull enemies into pits, traps, and the path of an axe swing.</p>
-        </div>
-    </div>
-</div>
-<div class="row">
-    <p class="display-4 text-center"><i class="bi bi-award pe-3"></i><mark class="mark-green">Honorable Mentions:</mark> Ana, Kiriko, Illari, Tracer, Winston</p>
-    <hr class="opacity-75">
-</div>
-<!--END MAINS-->
-<!--START FAVORITES-->
-<div class="row gx-5" id="favorites">
-    <div class="col-lg-7 mb-4">
-        <h2>Favorite Maps <i class="bi bi-map"></i></h2>
-        <p>Dates are the years these maps were added to the game!</p>
-        <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col">
-                <div class="card papershadow">
-                <img src="images/Maps_Lijiang_Tower.webp" class="card-img-top" alt="Loading screen for Midtown map" loading="lazy">
-                <div class="card-body">
-                    <h5 class="card-title">Lijiang Tower, 2016</h5>
+            <div class="row mt-4" id="home">
+                <div class="col-lg-3 mb-4">
+                    <img src="images/Spray_Juno_Star_Glider.png" class="sticker img-fluid" loading="lazy">
                 </div>
+                <div class="col-lg-9 p-4">
+                    <h1>Brighter than a Shooting Star <i class="bi bi-stars"></i></h1>
+                    <p class="display-5"><mark class="mark-green">Cora's Overwatch Shrine</mark></p>
+                    <p><a href="https://overwatch.blizzard.com/en-us/">Overwatch</a>, or OW for short, is a free-to-play PvP hero shooter game by Blizzard Entertainment.</p>  
+                    <p>In the past year or so, I've gotten more invested in the game lore and dedicated to improving my strategy and skills. And since I could yap about this game forever, <mark class="mark-yellow">I've made this place to share my love for it all!</mark> <i class="bi bi-emoji-smile"></i></p>  
                 </div>
+                <hr class="opacity-75 mb-0">
             </div>
-            <div class="col">
-                <div class="card papershadow">
-                <img src="images/Maps_Havana.webp" class="card-img-top" alt="Loading screen for Havana map" loading="lazy">
-                <div class="card-body">
-                    <h5 class="card-title">Havana, 2019</h5>
+            <!--END HEADER-->
+            <!--START WORLDBUILDING-->
+            <div class="row" id="world">
+                <div class="col mt-0 mb-0 ps-4 pe-4">
+                    <h1>The World of Overwatch <i class="bi bi-globe-americas"></i></h1>
+                    <p class="display-5"><mark class="mark-pink">(My very, very brief summary of the story)</mark></p>
                 </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card papershadow">
-                <img src="images/Maps_Circuit_Royal.webp" class="card-img-top" alt="Loading screen for Circuit Royale map" loading="lazy">
-                <div class="card-body">
-                    <h5 class="card-title">Circuit Royal, 2022</h5>
-                </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card papershadow">
-                <img src="images/Maps_Aatlis.webp" class="card-img-top" alt="Loading screen for Aatlis map" loading="lazy">
-                <div class="card-body">
-                    <h5 class="card-title">Aatlis, 2025</h5>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-5 mb-4">
-        <h2>Favorite Skins <i class="bi bi-emoji-heart-eyes"></i></h2>
-        <p>I don't own these skins or even play these characters. I just love these skins in particular and appreciate seeing them out in the wild!
-        <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
-        </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                <img src="images/Skin_Brigitte_Feskarn.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Brigitte, "Feskarn"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Skin_Mei_Cloudy_Day.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Mei, "Cloudy Day"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="images/Skin_Ashe_Raijin.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Ashe, "Raijin"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Baptiste_Funky.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Baptiste, "Funky"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Hanzo_Kyogisha.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Hanzo, "Kyogisha"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Bastion_Brick.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Bastion, "Brick"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Junker_Queen_Mob_Boss.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Junker Queen, "Mob Boss"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Doomfist_Funky.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Doomfist, "Funky"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Moira_Glam.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Moira, "Glam"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Orisa_Rubber_Ducky.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Orisa, "Rubber Ducky"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Sombra_Ninja.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Sombra, "Ninja"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Symmetra_Mermaid.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Symmetra, "Mermaid"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Wrecking_Ball_Crustacean.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Wrecking Ball, "Crustacean"</h4>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                <img src="images/Skin_Tracer_Comic_Book.webp" class="d-block w-100" loading="lazy">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h4 class="tape text-shadow">Tracer, "Comic Book"</h4>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
-    </div>
-<hr class="opacity-75 mb-0">
-<!--END FAVORITES-->
-<!--START TIER LISTS-->
-<div class="row" id="tierlists">
-    <div class="col mt-0 mb-4 ps-4 pe-4">
-        <h1>Tier List Maker <i class="bi bi-list-stars"></i></h1>
-        <p>During queue times, my friends and I love playing what we call the <mark class="mark-green">"Headcanon Game,"</mark> where we assign headcanons to all the characters based on a prompt. Sometimes they are unique qualities assigned to each character and sometimes they're a position in a tier list. I don't like using tier list sites, which are often out of date and require sign&#8209;ins to make/edit lists, <mark class="mark-orange">so I made my own here!</mark> This tier list maker includes <mark class="mark-blue">all 52 current heroes</mark>, and I plan to update it as new heroes are added.</p>
-        <p><i class="bi bi-patch-question pe-3"></i><mark class="mark-pink">Instructions:</mark> Click the character portraits and drag them to a tier. When you're done, use your native screen-capture tool to take a screenshot and save it to your computer/phone. To reset the list, refresh this page. If you're not sure who a character is, you can hover over their portrait to see their name. <mark class="mark-yellow"><u>The title text and tier names can be edited!!</u></mark></p>
-        <input type="button" id="btnPrompt" value="Random Prompt" onclick="GetValue();"/> <span class="display-5 fst-italic fw-bold" id="prompt">Click the button for a prompt to inspire you!</span>
-        <script>
-            function GetValue()
-            {
-                var myarray= new Array("Best Ultimate Abilities","Most Fun to Play","Least Fun to Play Against","Steepness of Learning Curve","Most Pleasant on a First Date","Most Enjoyable to Sit Next to on an Airplane","Level of Mario Kart Skill","How Well They Handle Spicy Food","Level of Cooking Skill","Level of Skill with Technology","Most Capable of Assembling IKEA Furniture","Amount of Thought Put into Your Birthday Gift","How Good of a Driver They Are","Where They Sit in the Car During a Road Trip","How Good of a Roommate They Would Be", "What Type of Bender Would They Be (i.e., in the Avatar: The Last Airbender universe)?");
-                var random = myarray[Math.floor(Math.random() * myarray.length)];
-            document.getElementById("prompt").innerHTML=random;
-            }
-        </script>
-            <h2 class="text-center mt-5" contenteditable="true">Tier List Title [Title &amp; tier names are editable!]</h2>
-            <div class="row">
-                <div class="col-2 text-break tier-rank letter s" contenteditable="true">S-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
             <div class="row">
-                <div class="col-2 text-break tier-rank letter a" contenteditable="true">A-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="row">
-                <div class="col-2 text-break tier-rank letter b" contenteditable="true">B-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="row">
-                <div class="col-2 text-break tier-rank letter c" contenteditable="true">C-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="row">
-                <div class="col-2 text-break tier-rank letter d" contenteditable="true">D-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="row">
-                <div class="col-2 text-break tier-rank letter e" contenteditable="true">E-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="row">
-                <div class="col-2 text-break tier-rank letter f" contenteditable="true">F-Tier<br></div>
-                <div class="col tierlist" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="row">
-                <div class="col deposit p-0" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <img id="tier-Dva" src="images/Icon-D.Va.gif" title="D.Va" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Domina" src="images/Icon-Domina-fix.gif" title="Domina" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Doom" src="images/Icon-Doomfist.gif" title="Doomfist" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Hazard" src="images/Icon-Hazard.gif" title="Hazard" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-JQ" src="images/Icon-Junker_Queen.gif" title="Junker Queen" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Mauga" src="images/Icon-Mauga.gif"  title="Mauga" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Orisa" src="images/Icon-Orisa.gif" title="Orisa" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Ramattra" src="images/Icon-Ramattra.gif" title="Ramattra" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Rein" src="images/Icon-Reinhardt.gif" title="Reinhardt" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Roadhog" src="images/Icon-Roadhog.gif" title="Roadhog" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Sigma" src="images/Icon-Sigma.gif" title="Sigma" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Winston" src="images/Icon-Winston.gif" title="Winston" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Wreckingball" src="images/Icon-Wrecking_Ball.gif" title="Wrecking Ball" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Zarya" src="images/Icon-Zarya.gif" title="Zarya" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Anran" src="images/Icon-Anran-fix.gif" title="Anran" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Ashe" src="images/Icon-Ashe.gif" title="Ashe" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Bastion" src="images/Icon-Bastion.gif" title="Bastion" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Cassidy" src="images/Icon-Cassidy.gif" title="Cassidy" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Echo" src="images/Icon-Echo.gif" title="Echo" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Emre" src="images/Icon-Emre.gif" title="Emre" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Freja" src="images/Icon-Freja.gif" title="Freja" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Genji" src="images/Icon-Genji.gif" title="Genji" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Hanzo" src="images/Icon-Hanzo.gif" title="Hanzo" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Junkrat" src="images/Icon-Junkrat.gif" title="Junkrat" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Mei" src="images/Icon-Mei.gif" title="Mei" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Pharah" src="images/Icon-Pharah.gif" title="Pharah" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Reaper" src="images/Icon-Reaper.gif" title="Reaper" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Shion" src="images/Icon-Shion.gif" title="Shion" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Sierra" src="images/Icon-Sierra.gif" title="Sierra" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Sojourn" src="images/Icon-Sojourn.gif" title="Sojourn" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-76" src="images/Icon-Soldier_76.gif" title="Soldier 76" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Sombra" src="images/Icon-Sombra.gif" title="Sombra" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Sym" src="images/Icon-Symmetra.gif" title="Symmetra" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Torb" src="images/Icon-Torbjorn.gif" title="Torbj&ouml;rn" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Tracer" src="images/Icon-Tracer.gif" title="Tracer" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Vendetta" src="images/Icon-Vendetta.gif" title="Vendetta" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Venture" src="images/Icon-Venture.gif" title="Venture" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Widowmaker" src="images/Icon-Widowmaker.gif" title="Widowmaker" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Ana" src="images/Icon-Ana.gif" title="Ana" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Brig" src="images/Icon-Brigitte.gif" title="Brigitte" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Bap" src="images/Icon-Baptiste.gif" title="Baptiste" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Illari" src="images/Icon-Illari.gif" title="Illari" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-JetpackCat" src="images/Icon-Jetpack_Cat.gif" title="Jetpack Cat" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Juno" src="images/Icon-Juno.gif" title="Juno" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Kiriko" src="images/Icon-Kiriko.gif" title="Kiriko" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-LW" src="images/Icon-Lifeweaver.gif" title="Lifeweaver" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Lucio" src="images/Icon-Lucio.gif" title="Lucio" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Mercy" src="images/Icon-Mercy.gif" title="Mercy" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Mizuki" src="images/Icon-Mizuki.gif" title="Mizuki" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Moira" src="images/Icon-Moira.gif" title="Moira" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Wuyang" src="images/Icon-Wuyang.gif" title="Wuyang" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
-                        <img id="tier-Zen" src="images/Icon-Zenyatta.gif" title="Zenyatta" draggable="true" ondragstart="drag(event)" height="64px" loading="lazy">
+                <div class="col-lg-6 mt-0 mb-4 ps-4 pe-4">
+                    <p>OW is set in our world, 60 years into the future, in a post&ndash;world war setting. <mark class="mark-orange">Overwatch was an international task force that formed as a response to the Omnic Crisis,</mark> a worldwide disaster where a rogue enivornmental conservation AI took control of the world's robots and attempted to eliminate all of humanity in the interest of saving the planet. Overwatch comprised scientists, diplomats, soldiers, search-and-rescue forces and more, but most people know it for its elite strike team of heroes.</p>
+                    <p>The Omnic Crisis was eventually quelled by a sentient robot, Aurora, who "awoke" her kind on an instant, global scale and created the Omnic race. Though the war is over, the world is still recovering and new, malevolent forces have risen up to take advantage of its weakened state. <mark class="mark-green">A new generation of heroes is needed to protect the world against its latest threats.</mark> <i class="bi bi-star"></i></p>
+                </div>
+                <div class="col-lg-6 mt-0 mb-4 ps-4 pe-4">
+                    <p>Overwatch lore is scattered across many animated shorts, comics, books, short stories, and other media. It's a lot to dig through, so I'd say that the best starting point is <mark class="mark-blue">the three-part Genesis series.</mark></p>
+                    <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/a1rtqzDttrQ?si=wLhhvjJYKk1_24FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
+                </div>
+                <p class="display-5 text-center"><u>If you want to explore more of the game lore, I suggest checking out the official <a href="https://overwatch.blizzard.com/en-us/media/">OW Media Gallery</a> and the <a href="https://overwatch.wiki">Overwatch Wiki!</a></u></p>
+                <hr class="opacity-75">
             </div>
-	<script>
-		function allowDrop(ev) {
-			ev.preventDefault();
-		}
-		function drag(ev) {
-			ev.dataTransfer.setData("text", ev.target.id);
-		}
-		function drop(ev) {
-			ev.preventDefault();
-			var data = ev.dataTransfer.getData("text");
-			var target = ev.target;
-			// Only append the dragged element if the target is the intended container
-			if (target.classList.contains('tierlist') || target.classList.contains('deposit')) {
-				target.appendChild(document.getElementById(data));
-			}
-		}
-    </script>
-</div>
-    <hr class="opacity-75 mt-5">
-</div>
-<!--END TIER LISTS-->
-<!--START FOR YOU-->
-<div class="row" id="for-you">
-    <div class="col mt-0 p-4">
-        <h1>Fun Stuff for You! <i class="bi bi-box2-heart"></i></h1>
-        <p><mark class="mark-green">Free to use and distribute. No credit required, but appreciated!</mark></p>
-    </div>
-</div>
-<div class="row">
-    <div class="col-lg-5 mb-4 ps-4">
-        <h3><u>88x31 Buttons</u></h3>
-        <p class="mb-0">Show off your mains! Sorted in alphabetical order.</p>
-        <img src="images\88x31_OW_Main_Ana.gif" alt="Ana 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Anran.gif" alt="Anran 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Ashe.gif" alt="Ashe 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Baptiste.gif" alt="Baptiste 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Bastion.gif" alt="Bastion 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Brigitte.gif" alt="Brigitte 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Cassidy.gif" alt="Cassidy 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Domina.gif" alt="Domina 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Doomfist.gif" alt="Doomfist 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Dva.gif" alt="Dva 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Echo.gif" alt="Echo 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Emre.gif" alt="Emre 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Freja.gif" alt="Freja 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Genji.gif" alt="Genji 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Hanzo.gif" alt="Hanzo 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Hazard.gif" alt="Hazard 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Illari.gif" alt="Illari 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_JetpackCat.gif" alt="Jetpack Cat 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_JunkerQueen.gif" alt="Junker Queen 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Junkrat.gif" alt="Junkrat 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Juno.gif" alt="Juno 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Kiriko.gif" alt="Kiriko 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Lifeweaver.gif" alt="Lifeweaver 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Lucio.gif" alt="Lucio 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Mauga.gif" alt="Mauga 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Mei.gif" alt="Mei 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Mercy.gif" alt="Mercy 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Mizuki.gif" alt="Mizuki 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Moira.gif" alt="Moira 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Orisa.gif" alt="Orisa 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Pharah.gif" alt="Pharah 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Ramattra.gif" alt="Ramattra 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Reaper.gif" alt="Reaper 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Reinhardt.gif" alt="Reinhardt 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Roadhog.gif" alt="Roadhog 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Sierra.gif" alt="Sierra 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Sigma.gif" alt="Sigma 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Sojourn.gif" alt="Sojourn 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Soldier76.gif" alt="Soldier 76 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Sombra.gif" alt="Sombra 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Symmetra.gif" alt="Symmetra 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Torbjorn.gif" alt="Torbjorn 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Tracer.gif" alt="Tracer 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Vendetta.gif" alt="Vendetta 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Venture.gif" alt="Venture 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Widowmaker.gif" alt="Widowmaker 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Winston.gif" alt="Winston 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_WreckingBall.gif" alt="Wrecking Ball 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Wuyang.gif" alt="Wuyang 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Zarya.gif" alt="Zarya 88x31 button" class="mb-1" loading="lazy">
-        <img src="images\88x31_OW_Main_Zenyatta.gif" alt="Zenyatta 88x31 button" class="mb-1" loading="lazy">
-    </div>
-    <div class="col-lg-7 mb-4 ps-4">
-        <h3><u>Pixel Spray Adoptables</u></h3>
-        <p class="mb-3">Do you love the pixel sprays as much as I do? I'm in the process of converting them to a 1:1 pixel aspect ratio! It's an ambitious task, so please check back for new additions! <mark class="mark-pink">Not my artwork!!</mark></p>
-        <img src="images/Pixel_Spray_Ana.gif" class="mb-1" alt="Ana pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Bastion.gif" class="mb-1" alt="Bastion pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Echo.gif" class="mb-1" alt="Echo pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Freja.gif" class="mb-1" alt="Freja pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Genji.gif" class="mb-1" alt="Genji pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Hanzo.gif" class="mb-1" alt="Hanzo pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Hazard.gif" class="mb-1" alt="Hazard pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Illari.gif" class="mb-1" alt="Illari pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Junker_Queen.gif" class="mb-1" alt="Junker Queen pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Juno.gif" class="mb-1" alt="Icon-Juno pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Winston.gif" class="mb-1" alt="Winston pixel spray" loading="lazy">
-        <img src="images/Pixel_Spray_Zenyatta.gif" class="mb-1" alt="Zenyatta pixel spray" loading="lazy">
-    </div>
-    <hr class="opacity-75">
-</div>
-<!--END FOR YOU-->
-<!--START SITELY-->
-<div class="row" id="sitely">
-    <div class="col-lg-6 mb-4">
-        <div class="ps-4 pt-4">
-            <img src="images/Spray_Juno_Star_Girl.png" class="sticker w-40 float-end" loading="lazy">
-            <h2>About the Theme<i class="bi bi-rocket-takeoff ms-3"></i></h2>
-            <p><mark class="mark-orange">"Brighter than a Shooting Star"</mark> is a theme inspired by Juno Teo Minh. She's a Martian girl who's timid and naive, but sees the world with curiousity and optimism.</p> 
-            <p>This theme is how I imagine she'd record her thoughts: as a bullet journal decorated with lots of stickers, highlighters, and gel pens. The theme name itself is one of Juno's voice lines!</p>
-        </div>
-    </div>
-    <div class="col-lg-3 mb-4 p-4">
-        <div class="bg-blue papershadow p-4">
-            <h2>Changelog</h2>
-            <div class="pe-3" style="height: 300px; overflow: scroll;">
-                <p class="mb-0"><b>2026.08.04</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Shion to tier list maker</p>
-                <p class="mb-0"><b>2026.05.24</b><i class="bi bi-star-fill ms-2 me-2"></i>Added pixel sprays: Freja, Hazard, Illari, Junker Queen, Juno, Zenyatta</p>
-                <p class="mb-0"><b>2026.05.19</b><i class="bi bi-star-fill ms-2 me-2"></i>Migrated shrine to standalone site</p>
-                <p class="mb-0"><b>2026.04.26</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Sierra to tier list maker and 88x31 buttons</p>
-                <p class="mb-0"><b>2026.02.22</b><i class="bi bi-star-fill ms-2 me-2"></i>Changed all instances of "Overwatch 2" to "Overwatch", added new heroes to tier list, updated all 88x31 buttons</p>
-                <p class="mb-0"><b>2026.01.22</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Winston and Bastion pixels</p>
-                <p class="mb-0"><b>2025.12.01</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Vendetta to tier list maker</p>
-                <p class="mb-0"><b>2025.11.26</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Ana and Hanzo pixels</p>
-                <p class="mb-0"><b>2025.11.13</b><i class="bi bi-star-fill ms-2 me-2"></i>Created shrine!</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-lg-3 mb-4 p-4">
-        <div class="bg-yellow papershadow p-4">
-            <h2>Credits</h2>
-            <div class="pe-3" style="height: 300px; overflow: scroll;">
-                <p class="mb-0"><b>Fonts</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://www.dafont.com/litte-salty.font">Litte Salty</a> and <a href="https://www.fontsquirrel.com/fonts/gaegu">Gaegu</a></p>
-                <p class="mb-0"><b>Images</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://overwatch.blizzard.com/en-us/media/">OW Media Gallery</a>, <a href="https://blizzard.gamespress.com/en/Overwatch-2">OW Press Kit</a>, and <a href="https://overwatch.fandom.com/wiki/Overwatch_Wiki">Overwatch Wiki</a></p>
-                <p class="mb-0"><b>Background Pattern</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://www.transparenttextures.com/">Transparent Textures</a></p>
-                <p class="mb-0"><b>Favicon</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://pixelsafari.neocities.org/">Pixel Safari</a></p>
-                <p class="mb-0"><b>Tier List Template</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://github.com/Procedurally-Generated-Human/Tier-List-Maker">Procedurally-Generated Human</a></p>
-            </div>
-        </div>
-    </div>
-    <hr class="opacity-75">
-</div>
-<!--END SITELY-->
-<div class="row">
-    <p class="display-4 text-center"><mark class="mark-yellow">Thank you for visiting! <i class="bi bi-emoji-smile pe-1"></i><i class="bi bi-emoji-smile pe-1"></i><i class="bi bi-emoji-smile"></i></mark></p>
-    <p class="text-center">Go <a href="#main-menu">back to the top</a>? Or go back to <a href="https://cora.fish/">cora.fish</a>?</p> 
-</div>
-            <div class="row">
-                <div class="col">
-                    <p class="tiny-text text-center">This is an unofficial, fan-made site. No copyright infringement is intended. I do not own nor claim to own the rights to any of the Overwatch content shared.</p>
+            <!--END WORLDBUILDING-->
+            <!--START MAINS-->
+            <div class="row" id="mains">
+                <div class="col mt-0 p-4">
+                    <h1>My Mains <i class="bi bi-arrow-through-heart"></i></h1>
+                    <p class="mb-0">I've recently fallen in love with the <mark class="mark-yellow">6v6 format</mark> of the game and tend to be <mark class="mark-blue">a flex player</mark>. That means I dabble a bit in every role: Tank, Damage, and Support. Here are my main heroes for each!</p>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-lg-3 mb-4"><h2>Tank <i class="bi bi-shield-shaded"></i></h2></div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Domina_Mocking_Domina.webp" class="sticker w-100" loading="lazy">
+                        <h3>Domina</h3>
+                        <p class="mb-1"><b>Nationality:</b> India</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Junker_Queen_Jagged_Blade.png" class="sticker w-100" loading="lazy">
+                        <h3>Junker Queen</h3>
+                        <p class="mb-1"><b>Nationality:</b> Australia</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Winston_Presents.png" class="sticker w-100" loading="lazy">
+                        <h3>Winston</h3>
+                        <p class="mb-1"><b>Base:</b> Watchpoint: Gibraltar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 mb-4"><h2>Damage <i class="bi bi-crosshair"></i></h2></div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Echo_Butterfly.png" class="sticker w-100" loading="lazy">
+                        <h3>Echo</h3>
+                        <p class="mb-1"><b>Base:</b> Watchpoint: Gibraltar</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Cassidy_Bang_Bang.png" class="sticker w-85" loading="lazy">
+                        <h3>Cassidy</h3>
+                        <p class="mb-1"><b>Nationality:</b> USA</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Bastion_Bast-Yum.png" class="sticker w-100" loading="lazy">
+                        <h3>Bastion</h3>
+                        <p class="mb-1"><b>Base:</b> Sweden</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 mb-4"><h2>Support <i class="bi bi-bandaid"></i></h2></div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Baptiste_Hey_There.png" class="sticker w-100" loading="lazy">
+                        <h3>Baptiste</h3>
+                        <p class="mb-1"><b>Nationality:</b> Haiti</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Kiriko_Late.png" class="sticker w-100" loading="lazy">
+                        <h3>Kiriko</h3>
+                        <p class="mb-1"><b>Nationality:</b> Japan</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="pt-4 pb-2 ps-4 pe-4 h-100 card papershadow">
+                        <img src="images/Spray_Ana_Botanist.png" class="sticker w-100" loading="lazy">
+                        <h3>Ana</h3>
+                        <p class="mb-1"><b>Nationality:</b> Egypt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p class="display-4 text-center pt-4"><i class="bi bi-award pe-3"></i><mark class="mark-green">Honorable Mentions:</mark> Orisa, Tracer, Ashe, Sojourn, Illari, Juno, Mizuki, Zenyatta</p>
+                <hr class="opacity-75">
+            </div>
+            <!--END MAINS-->
+            <!--START FAVORITES-->
+            <div class="row" id="favorites">
+                <div class="col-lg-7 mb-4">
+                    <h2>Favorite Maps <i class="bi bi-map"></i></h2>
+                    <p>Dates are the years these maps were added to the game!</p>
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card papershadow">
+                            <img src="images/Maps_Lijiang_Tower.webp" class="card-img-top" alt="Loading screen for Midtown map" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Lijiang Tower, 2016</h5>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card papershadow">
+                            <img src="images/Maps_Havana.webp" class="card-img-top" alt="Loading screen for Havana map" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Havana, 2019</h5>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card papershadow">
+                            <img src="images/Maps_Circuit_Royal.webp" class="card-img-top" alt="Loading screen for Circuit Royale map" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Circuit Royal, 2022</h5>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card papershadow">
+                            <img src="images/Maps_Aatlis.webp" class="card-img-top" alt="Loading screen for Aatlis map" loading="lazy">
+                            <div class="card-body">
+                                <h5 class="card-title">Aatlis, 2025</h5>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-4">
+                    <h2>Favorite Skins <i class="bi bi-emoji-heart-eyes"></i></h2>
+                    <p>I don't own these skins or even play these characters. I just love these skins in particular and appreciate seeing them out in the wild!
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="images/Skin_Brigitte_Feskarn.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Brigitte, "Feskarn"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Skin_Mei_Cloudy_Day.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Mei, "Cloudy Day"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/Skin_Ashe_Raijin.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Ashe, "Raijin"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Baptiste_Funky.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Baptiste, "Funky"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Hanzo_Kyogisha.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Hanzo, "Kyogisha"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Bastion_Brick.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Bastion, "Brick"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Junker_Queen_Mob_Boss.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Junker Queen, "Mob Boss"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Doomfist_Funky.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Doomfist, "Funky"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Moira_Glam.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Moira, "Glam"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Orisa_Rubber_Ducky.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Orisa, "Rubber Ducky"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Sombra_Ninja.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Sombra, "Ninja"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Symmetra_Mermaid.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Symmetra, "Mermaid"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Wrecking_Ball_Crustacean.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Wrecking Ball, "Crustacean"</h4>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                        <img src="images/Skin_Tracer_Comic_Book.webp" class="d-block w-100" loading="lazy">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h4 class="tape text-shadow">Tracer, "Comic Book"</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                </div>
+            </div>         
+            <hr class="opacity-75 mb-0">
+            <!--END FAVORITES-->
+            <!--START FOR YOU-->
+            <div class="row" id="for-you">
+                <div class="col mt-0 p-4">
+                    <h1>Fun Stuff for You! <i class="bi bi-box2-heart"></i></h1>
+                    <p><mark class="mark-green">Free to use and distribute. No credit required, but appreciated!</mark></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-5 mb-4 ps-4">
+                    <h3><u>88x31 Buttons</u></h3>
+                    <p class="mb-0">Show off your mains! Sorted in alphabetical order.</p>
+                    <img src="images\88x31_OW_Main_Ana.gif" alt="Ana 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Anran.gif" alt="Anran 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Ashe.gif" alt="Ashe 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Baptiste.gif" alt="Baptiste 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Bastion.gif" alt="Bastion 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Brigitte.gif" alt="Brigitte 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Cassidy.gif" alt="Cassidy 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Domina.gif" alt="Domina 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Doomfist.gif" alt="Doomfist 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Dva.gif" alt="Dva 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Echo.gif" alt="Echo 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Emre.gif" alt="Emre 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Freja.gif" alt="Freja 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Genji.gif" alt="Genji 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Hanzo.gif" alt="Hanzo 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Hazard.gif" alt="Hazard 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Illari.gif" alt="Illari 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_JetpackCat.gif" alt="Jetpack Cat 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_JunkerQueen.gif" alt="Junker Queen 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Junkrat.gif" alt="Junkrat 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Juno.gif" alt="Juno 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Kiriko.gif" alt="Kiriko 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Lifeweaver.gif" alt="Lifeweaver 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Lucio.gif" alt="Lucio 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Mauga.gif" alt="Mauga 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Mei.gif" alt="Mei 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Mercy.gif" alt="Mercy 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Mizuki.gif" alt="Mizuki 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Moira.gif" alt="Moira 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Orisa.gif" alt="Orisa 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Pharah.gif" alt="Pharah 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Ramattra.gif" alt="Ramattra 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Reaper.gif" alt="Reaper 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Reinhardt.gif" alt="Reinhardt 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Roadhog.gif" alt="Roadhog 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Sierra.gif" alt="Sierra 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Sigma.gif" alt="Sigma 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Sojourn.gif" alt="Sojourn 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Soldier76.gif" alt="Soldier 76 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Sombra.gif" alt="Sombra 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Symmetra.gif" alt="Symmetra 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Torbjorn.gif" alt="Torbjorn 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Tracer.gif" alt="Tracer 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Vendetta.gif" alt="Vendetta 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Venture.gif" alt="Venture 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Widowmaker.gif" alt="Widowmaker 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Winston.gif" alt="Winston 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_WreckingBall.gif" alt="Wrecking Ball 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Wuyang.gif" alt="Wuyang 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Zarya.gif" alt="Zarya 88x31 button" class="mb-1" loading="lazy">
+                    <img src="images\88x31_OW_Main_Zenyatta.gif" alt="Zenyatta 88x31 button" class="mb-1" loading="lazy">
+                </div>
+                <div class="col-lg-7 mb-4 ps-4">
+                    <h3><u>Pixel Spray Adoptables</u></h3>
+                    <p class="mb-3">Do you love the pixel sprays as much as I do? I'm in the process of converting them to a 1:1 pixel aspect ratio! It's an ambitious task, so please check back for new additions! <mark class="mark-pink">Not my artwork!!</mark></p>
+                    <img src="images/Pixel_Spray_Ana.gif" class="mb-1" alt="Ana pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Bastion.gif" class="mb-1" alt="Bastion pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Echo.gif" class="mb-1" alt="Echo pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Freja.gif" class="mb-1" alt="Freja pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Genji.gif" class="mb-1" alt="Genji pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Hanzo.gif" class="mb-1" alt="Hanzo pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Hazard.gif" class="mb-1" alt="Hazard pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Illari.gif" class="mb-1" alt="Illari pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Junker_Queen.gif" class="mb-1" alt="Junker Queen pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Juno.gif" class="mb-1" alt="Icon-Juno pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Winston.gif" class="mb-1" alt="Winston pixel spray" loading="lazy">
+                    <img src="images/Pixel_Spray_Zenyatta.gif" class="mb-1" alt="Zenyatta pixel spray" loading="lazy">
+                    <a href="tierlist.html"><button class="btn btn-outline-dark w-100 mt-4 h3 fw-bold">Go to the tier list maker! <i class="bi bi-box-arrow-right"></i></button></a>
+                </div>
+                <hr class="opacity-75">
+            </div>
+            <!--END FOR YOU-->
+            <!--START SITELY-->
+            <div class="row" id="sitely">
+                <div class="col-lg-6 mb-4">
+                    <div class="ps-4 pt-4">
+                        <img src="images/Spray_Juno_Star_Girl.png" class="sticker w-40 float-end" loading="lazy">
+                        <h3>About the Theme<i class="bi bi-rocket-takeoff ms-3"></i></h3>
+                        <p><mark class="mark-orange">"Brighter than a Shooting Star"</mark> is a theme inspired by Juno Teo Minh. She's a Martian girl who's timid and naive, but sees the world with curiousity and optimism.</p> 
+                        <p>This theme is how I imagine she'd record her thoughts: as a bullet journal decorated with lots of stickers, highlighters, and gel pens. The theme name itself is one of Juno's voice lines!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4 p-4">
+                    <div class="bg-blue papershadow p-4">
+                        <h3>Changelog</h3>
+                        <div class="pe-3" style="height: 300px; overflow: scroll;">
+                            <p class="mb-0"><b>2026.08.18</b><i class="bi bi-star-fill ms-2 me-2"></i>Updated tier list maker. Updated My Mains. Updated links to OW Wiki.</p>
+                            <p class="mb-0"><b>2026.08.04</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Shion to tier list maker</p>
+                            <p class="mb-0"><b>2026.05.24</b><i class="bi bi-star-fill ms-2 me-2"></i>Added pixel sprays: Freja, Hazard, Illari, Junker Queen, Juno, Zenyatta</p>
+                            <p class="mb-0"><b>2026.05.19</b><i class="bi bi-star-fill ms-2 me-2"></i>Migrated shrine to standalone site</p>
+                            <p class="mb-0"><b>2026.04.26</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Sierra to tier list maker and 88x31 buttons</p>
+                            <p class="mb-0"><b>2026.02.22</b><i class="bi bi-star-fill ms-2 me-2"></i>Changed all instances of "Overwatch 2" to "Overwatch", added new heroes to tier list, updated all 88x31 buttons</p>
+                            <p class="mb-0"><b>2026.01.22</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Winston and Bastion pixels</p>
+                            <p class="mb-0"><b>2025.12.01</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Vendetta to tier list maker</p>
+                            <p class="mb-0"><b>2025.11.26</b><i class="bi bi-star-fill ms-2 me-2"></i>Added Ana and Hanzo pixels</p>
+                            <p class="mb-0"><b>2025.11.13</b><i class="bi bi-star-fill ms-2 me-2"></i>Created shrine!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4 p-4">
+                    <div class="bg-yellow papershadow p-4">
+                        <h3>Credits</h3>
+                        <div class="pe-3" style="height: 300px; overflow: scroll;">
+                            <p class="mb-0"><b>Fonts</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://www.dafont.com/litte-salty.font">Litte Salty</a> and <a href="https://www.fontsquirrel.com/fonts/gaegu">Gaegu</a></p>
+                            <p class="mb-0"><b>Images</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://overwatch.blizzard.com/en-us/media/">OW Media Gallery</a>, <a href="https://blizzard.gamespress.com/en/Overwatch-2">OW Press Kit</a>, and <a href="https://overwatch.wiki">Overwatch Wiki</a></p>
+                            <p class="mb-0"><b>Background Pattern</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://www.transparenttextures.com/">Transparent Textures</a></p>
+                            <p class="mb-0"><b>Favicon</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://pixelsafari.neocities.org/">Pixel Safari</a></p>
+                            <p class="mb-0"><b>Tier List Code</b><i class="bi bi-star-fill ms-2 me-2"></i><a href="https://github.com/Procedurally-Generated-Human/Tier-List-Maker">Procedurally-Generated Human</a></p>
+                        </div>
+                    </div>
+                </div>
+                <hr class="opacity-75">
+            </div>
+            <!--END SITELY-->
+            <div w3-include-html="footer.html"></div>
         </div>
+        <script>includeHTML();</script>
     </body>
 </html>
